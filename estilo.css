@@ -207,40 +207,53 @@ ul{
 /*Vantangens*/
 
 .vantagens{
-    max-width: 960;
+
+    max-width: 960px;
+    
     margin: 0 auto;
+    
     display: flex;
+    
     flex-wrap: wrap;
+    
     justify-content: space-between;
+    
 }
 
 .vantagem{
-    max-width: 240px;
-    margin: 10px;
+max-width: 240px;
+margin: 10px;
 }
 
 .vantagem_titulo{
-    font-size: 1.7rem;
-    margin-bottom: 5px;
-    margin-left: 10px;
+
+font-size: 1.7rem;
+        
+margin-bottom: 5px;
+        
+margin-left: 10px;
+        
 }
 
 .vantagem_titulo::before{
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 25;
-    margin-right: 5px;
+
+content:"";
+display: inline-block;
+width: 10px;
+height: 25px;
+margin-right: 5px;
 }
 
-.vantagem:nth-of-type(3n+1) .vantagem_titulo::before{
-    background-color: var(--verde-claro);
+.vantagem:nth-of-type(3n+1) .vantagem_titulo::before{ 
+background-color: var(--verde-claro);
+} 
+            
+.vantagem:nth-of-type(3n+2) .vantagem_titulo::before{ 
+background-color: var(--rosa-escuro);
 }
-.vantagem:nth-of-type(3n+2)  .vantagem_titulo::before{
-    background-color: var(--rosa-escuro);
-}
-.vantagem:nth-of-type(3n+3) .vantagem_titulo::before{
-    background-color: var(--verde-escuro);
+            
+.vantagem:nth-of-type(3n+3) .vantagem_titulo::before{ 
+background-color: var(--verde-escuro);
 }
 
 /*newsletter*/
@@ -320,90 +333,104 @@ ul{
     padding-right: 10px;
 }
 
-.menu{
+.menu {
+
     display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
-}
-
-.menu_logo{
-    display: flex;
-    align-items: center;
-}
-
-.menu_logo h1{
-    color: #fff;
-}
-
-.nav{
-    display: flex;
-    align-items: center;
-}
-
-.nav .nav_lista{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-item{
-    margin: 0 15px;
-}
-
-.nav-link{
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
-}
-
-.mobile-menu-icon{
-    display: none;
-}
-
-.mobile-menu{
-    display: none;
-}
-
-@media screen and (max-width: 730px) {
-    .nav-bar{
-        padding: 1.5rem 4rem;
+    
+    justify-content: space-between; padding: 1.5rem frem;
+    
     }
+    
+    .menu_Logo {
+    
+    display: flex;
+    
+    align-items: center;
+    
+    }
+    
+    .menu_Logo h1 {
+    
+    color: #ffff
+    
+    }
+    
+    .nav{
+    
+    display: flex; align-items: center;
+    }
+    .nav .nav_Lista { display: flex; justify-content: center; list-style: none;
+    
+    }
+    
     .nav-item {
-        display: none;
+    
+    margin: 0 15px;
+    
     }
-    .login-button {
-        display: none;
+    
+    .nav-Link {
+    
+    text-decoration: none;
+    
+    font-size: 1.15rem; font-weight: 400;
+    
+    color: #fff;
+    
     }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+    
+    .mobile-menu-icon{ display: none;
+    
     }
+    
+    .mobile-menu {
+    
+    display: none; }
 
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    @media screen and (max-width: 730px) {
+
+        .nav-bar { padding: 1.5rem 4rem;
+        
+        }
+        
+        .nav-item { display: none;
+        
+        }
+        
+        .Login-button { display: none;
+        
+        }
+        
+        .mobile-menu-icon { display: block;
+        
+         cursor: pointer;}
+        
+        .mobile-menu-icon button { 
+            background-color: transparent;
+        
+        border: none;}
+        
+        .mobile-menu ul {
+        
+        display: flex; 
+        flex-direction: column; 
+        text-align: center; 
         padding-bottom: 1rem;
-    }
-
-    .mobile-menu .nav-item{
+        
+        }
+        
+        .mobile-menu .nav-item { display: block; padding-top: 1.2rem; }
+        
+        .mobile-menu .Login-button {
+        
         display: block;
-        padding: 1.2rem;
-    }
-
-    .mobile-menu .login-button{
-        display: block;
+        
         padding: 1rem 2rem;
-
-    }
-
-    .mobile-menu .login-button button {
+        
+        } 
+        .mobile-menu .Login-button button {
+        
         width: 100%;
+        }
+        .open { display: block;}
     }
-
-    .open {
-        display: block;
-    }
-}
